@@ -1,0 +1,32 @@
+.btn {
+    display: inline-block;
+    text: {
+        align: center;
+        decoration: none;
+    }
+    @include font-source-sans($main-text-s, $main-white, 600, 1.2);
+    border: solid 1px $orange-accent;
+    border-radius: 30px;
+    padding: 6px 58px;
+    background-color: $orange-accent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    @include for-size(tablet-portrait-up) {
+        padding: 12px 20px;
+        font-size: $main-text-m;
+    }
+}
+
+.btn:active {
+    filter: saturate(150%);
+}
+
+.btn:hover,
+.btn:focus {
+    color: $orange-accent;
+    border-color: $orange-accent;
+    background-color: $main-white;
+    transition: background-color 0.2s;
+    outline: none;
+}
