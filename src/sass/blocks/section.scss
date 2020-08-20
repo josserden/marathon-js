@@ -1,0 +1,71 @@
+.section {
+    display: block;
+    @include size(100%, auto);
+    padding: 20px;
+
+    @include for-size(tablet-portrait-up) {
+        padding: 60px;
+    }
+
+    &__clr {
+        background-color: $accent-background;
+
+        &-accent {
+            background-color: $violet-accent;
+        }
+    }
+}
+
+.offer {
+    background: {
+        image: url(../../images/img/vectior-mob-min.jpg);
+        size: contain;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../../images/img/vectior-mob@2x-min.jpg);
+    }
+
+    @include for-size(tablet-portrait-up) {
+        background: {
+            image: url(../../images/img/vector-tab-min.jpg);
+            size: contain;
+            repeat: no-repeat;
+            position: center;
+        }
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../../images/img/vector-tab@2x-min.jpg);
+        }
+    }
+
+    @include for-size(desktop-up) {
+        background: {
+            image: url(../../images/img/vector-pc-min.jpg);
+            // size: 700px;
+            repeat: no-repeat;
+            position: center;
+        }
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../../images/img/vector-pc@2x-min.jpg);
+        }
+    }
+}
+
+.parting {
+    @include for-size(tablet-portrait-up) {
+        background: {
+            image: url(../../images/svg/serpentine-tab.svg);
+            // size: 700px;
+            repeat: no-repeat;
+            position: center;
+        }
+    }
+}
+
+.offer-second {
+    background-color: $orange-accent;
+}

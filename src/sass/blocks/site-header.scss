@@ -45,6 +45,7 @@
     &-content {
         text-align: left;
         color: $main-white;
+        max-width: 280px;
         @include for-size(tablet-portrait-up) {
             max-width: 440px;
         }
@@ -121,12 +122,4 @@
             @include font-source-sans(34px, null, 500, 1.2);
         }
     }
-}
-
-#triangle_right {
-    width: 0;
-    height: 0;
-    border-top: 70px solid transparent;
-    border-left: 140px solid #ff5a00;
-    border-bottom: 70px solid transparent;
 }
