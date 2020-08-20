@@ -9,7 +9,7 @@
         image: url(../../images/img/header-min.png);
         size: 300px;
         repeat: no-repeat;
-        position: left 20px bottom;
+        position: right bottom;
     }
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -19,9 +19,9 @@
     @include for-size(tablet-portrait-up) {
         background: {
             image: url(../../images/img/header-tab-min.png);
-            size: 579px;
+            size: 379px;
             repeat: no-repeat;
-            position: left 185px bottom;
+            position: right 5px bottom;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -32,22 +32,59 @@
     @include for-size(desktop-up) {
         background: {
             image: url(../../images/img/header-pc-min.png);
-            size: 757px;
+            size: 700px;
             repeat: no-repeat;
-            position: left 632px bottom -36px;
+            position: right 50px bottom;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../../images/img/header-pc@2px-min.png);
         }
     }
+
+    &-content {
+        text-align: left;
+        color: $main-white;
+        @include for-size(tablet-portrait-up) {
+            max-width: 440px;
+        }
+        @include for-size(desktop-up) {
+            max-width: 520px;
+        }
+    }
+
+    &-title {
+        @extend %reset;
+        @include font-source-sans(20px, null, 500, 1.2);
+        margin-bottom: 10px;
+
+        @include for-size(tablet-portrait-up) {
+            @include font-source-sans(34px, null, 500, 1.2);
+        }
+    }
+
+    &-text {
+        @extend %reset;
+        @include font-source-sans(16px, null, 600, 1.2);
+        margin-bottom: 40px;
+
+        @include for-size(tablet-portrait-up) {
+            @include font-source-sans(22px, null, 500, 1.2);
+            margin-bottom: 50px;
+        }
+        @include for-size(desktop-up) {
+            margin-bottom: 70px;
+        }
+    }
 }
 
 .site__nav {
+    margin-bottom: 20px;
     @include for-size(tablet-portrait-up) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 52px;
     }
 }
 
@@ -58,4 +95,38 @@
     @include for-size(tablet-portrait-up) {
         margin-bottom: 0;
     }
+}
+
+.site__heading {
+    @extend %reset;
+    @include font-source-sans(32px, null, 800, 1.2);
+
+    @include for-size(tablet-portrait-up) {
+        @include font-source-sans(48px, null, 800, 1.2);
+    }
+
+    @include for-size(desktop-up) {
+        @include font-source-sans(64px, null, 800, 1.2);
+    }
+
+    &-text {
+        @extend %reset;
+        @include font-source-sans(20px, null, 500, 1.2);
+
+        @include for-size(tablet-portrait-up) {
+            @include font-source-sans(28px, null, 500, 1.2);
+        }
+
+        @include for-size(desktop-up) {
+            @include font-source-sans(34px, null, 500, 1.2);
+        }
+    }
+}
+
+#triangle_right {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-left: 140px solid #ff5a00;
+    border-bottom: 70px solid transparent;
 }
