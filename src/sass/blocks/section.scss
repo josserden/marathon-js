@@ -115,39 +115,38 @@
 .offer {
     text-align: center;
     background: {
-        image: url(../images/img/vectior-mob-min.jpg);
+        image: url(../images/img/vector-mob-min.png);
         size: contain;
         repeat: no-repeat;
         position: center;
     }
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/img/vectior-mob@2x-min.jpg);
+        background-image: url(../images/img/vector-mob@2x-min.png);
     }
 
     @include for-size(tablet-portrait-up) {
         background: {
-            image: url(../images/img/vector-tab-min.jpg);
+            image: url(../images/img/vector-tab-min.png);
             size: contain;
             repeat: no-repeat;
             position: center;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/img/vector-tab@2x-min.jpg);
+            background-image: url(../images/img/vector-tab@2x-min.png);
         }
     }
 
     @include for-size(desktop-up) {
         background: {
-            image: url(../images/img/vector-pc-min.jpg);
-            // size: 700px;
+            image: url(../images/img/vector-pc-min.png);
             repeat: no-repeat;
             position: center;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(../images/img/vector-pc@2x-min.jpg);
+            background-image: url(../images/img/vector-pc@2x-min.png);
         }
     }
 }
@@ -156,7 +155,6 @@
     @include for-size(tablet-portrait-up) {
         background: {
             image: url(../images/svg/serpentine-tab.svg);
-            // size: 700px;
             repeat: no-repeat;
             position: center;
         }
@@ -191,4 +189,89 @@
     }
     right: 0px;
     top: 70px;
+}
+
+.choice {
+    position: relative;
+}
+
+.choice::before {
+    @include for-size(tablet-portrait-up) {
+        @include pseudo;
+        position: absolute;
+        width: 187px;
+        height: 564px;
+        background: {
+            image: url(../images/img/1dol-right-tab-min.png);
+            size: contain;
+            repeat: no-repeat;
+            position: center;
+        }
+        right: 0;
+        bottom: 64px;
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/img/1dol-right-tab@2x-min.png);
+        }
+    }
+
+    @include for-size(desktop-up) {
+        @include pseudo;
+        position: absolute;
+        width: 240px;
+        height: 579px;
+        background: {
+            image: url(../images/img/1dol-pc-right-min.png);
+            size: contain;
+            repeat: no-repeat;
+            position: center;
+        }
+        right: 0;
+        bottom: 106px;
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/img/1dol-pc-right@2x-min.png);
+        }
+    }
+}
+
+.choice::after {
+    @include for-size(tablet-portrait-up) {
+        @include pseudo;
+        position: absolute;
+        width: 187px;
+        height: 490px;
+        background: {
+            image: url(../images/img/1dol-tab-left-min.png);
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+        left: 0;
+        bottom: 500px;
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/img/1dol-tab-left@2x-min.png);
+        }
+    }
+
+    @include for-size(desktop-up) {
+        @include pseudo;
+        position: absolute;
+        width: 240px;
+        height: 700px;
+        background: {
+            image: url(../images/img/1dol-pc-left-min.png);
+            size: contain;
+            repeat: no-repeat;
+            position: center;
+        }
+        right: 0;
+        bottom: -75px;
+        z-index: 1;
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/img/1dol-pc-left@2x-min.png);
+        }
+    }
 }
