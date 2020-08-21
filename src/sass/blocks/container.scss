@@ -12,3 +12,10 @@
         width: 1170px;
     }
 }
+
+.container__fluid {
+    @include for-size(desktop-up) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

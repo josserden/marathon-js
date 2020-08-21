@@ -14,6 +14,31 @@
             background-color: $violet-accent;
         }
     }
+
+    &__header {
+        // text-align: center;
+        color: $main-black;
+    }
+
+    &__title {
+        @extend %reset;
+        @include font-source-sans(32px, null, 800, 1.2);
+        margin-bottom: 10px;
+
+        @include for-size(tablet-portrait-up) {
+            @include font-source-sans(64px, null, 800, 1.2);
+        }
+    }
+
+    &__text {
+        @extend %reset;
+        @include font-source-sans(20px, null, 500, 1.2);
+        margin-bottom: 10px;
+
+        @include for-size(tablet-portrait-up) {
+            @include font-source-sans(34px, null, 500, 1.2);
+        }
+    }
 }
 
 .offer {

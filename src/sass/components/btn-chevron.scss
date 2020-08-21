@@ -19,7 +19,7 @@
 .btn-chevron::after {
     display: block;
     content: '';
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute;
     bottom: -1px;
     right: -70px;
     border: 35px solid transparent;
