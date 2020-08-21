@@ -1,0 +1,11 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<symbol id="chevron-top" viewBox="0 0 74 64">
+			<title>
+				chevron-top
+			</title>
+			<path d="M36.3623 51.5261L37 52.054L37.6377 51.5261L73 22.2539L73 32.1575L37 61.9577L0.999999 32.1575L1 22.2539L36.3623 51.5261Z" fill="#FF662D" stroke="#FF662D" stroke-width="2" />
+			<path d="M36.3623 31.3982L37 31.9261L37.6377 31.3982L73 2.12594L73 12.0296L37 41.8297L0.999999 12.0296L1 2.12594L36.3623 31.3982Z" fill="#FF662D" stroke="#FF662D" stroke-width="2" />
+		</symbol>
+	</defs>
+</svg>

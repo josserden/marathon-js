@@ -93,7 +93,6 @@
     @include pseudo;
     width: 60px;
     height: 60px;
-    background-color: $main-black;
     position: absolute;
     right: 20px;
     top: -30px;
@@ -104,7 +103,17 @@
     @include pseudo;
     width: 60px;
     height: 60px;
-    background-color: $main-black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    border-radius: 50%;
+}
+
+.descr__icon {
+    @include pseudo;
+    width: 70px;
+    height: 65px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

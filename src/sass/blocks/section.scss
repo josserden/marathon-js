@@ -14,7 +14,6 @@
 
         &-accent {
             background-color: $violet-accent;
-            text-align: center;
         }
     }
 
@@ -26,8 +25,9 @@
             margin-bottom: 60px;
         }
         @include for-size(desktop-up) {
+            width: calc((100% - 30px) / 12 * 7);
             margin-bottom: 0;
-            max-width: 660px;
+            padding: 20px 12px;
         }
     }
 
@@ -50,16 +50,39 @@
             @include font-source-sans(34px, null, 500, 1.2);
         }
     }
+
+    &__info {
+        @include for-size(desktop-up) {
+            width: calc((100% - 30px) / 12 * 5);
+        }
+    }
 }
 
 .accent__white {
-    max-width: 410px;
     color: $main-white;
-    font-size: 34px;
+    font-size: 20px;
+    text-align: left;
+    @include for-size(tablet-portrait-up) {
+        font-size: 34px;
+    }
+    @include for-size(desktop-up) {
+        padding: 20px 12px;
+    }
 }
 
 .text {
-    font-size: 22px;
+    font-size: 16px;
+
+    @include for-size(tablet-portrait-up) {
+        font-size: 22px;
+    }
+}
+
+.center {
+    margin-bottom: 20px;
+    @include for-size(desktop-up) {
+        padding: 0 100px;
+    }
 }
 
 .section__chevron::after {
@@ -83,7 +106,7 @@
 
     @include for-size(desktop-up) {
         top: 50%;
-        left: 48%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
 }
