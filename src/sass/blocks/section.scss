@@ -1,5 +1,6 @@
 .section {
     display: block;
+    position: relative;
     @include size(100%, auto);
     padding: 20px;
 
@@ -13,6 +14,7 @@
 
         &-accent {
             background-color: $violet-accent;
+            text-align: center;
         }
     }
 
@@ -50,7 +52,17 @@
     }
 }
 
-.section__clr::after {
+.accent__white {
+    max-width: 410px;
+    color: $main-white;
+    font-size: 34px;
+}
+
+.text {
+    font-size: 22px;
+}
+
+.section__chevron::after {
     @include pseudo;
     position: absolute;
     width: 65px;
