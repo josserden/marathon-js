@@ -117,7 +117,7 @@
     margin-bottom: 20px;
 
     @include for-size(tablet-portrait-up) {
-        min-width: 480px;
+        max-width: 450px;
     }
 }
 

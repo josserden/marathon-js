@@ -6,3 +6,10 @@
         width: 100%;
     }
 }
+
+.img {
+    @include for-size(tablet-portrait-up) {
+        width: 300px;
+        height: auto;
+    }
+}
