@@ -1,6 +1,8 @@
 .container {
     width: 100%;
     padding: 28px 16px;
+    background-color: red;
+    overflow: hidden;
 
     @include for-size(tablet-portrait-up) {
         width: 630px;
@@ -9,13 +11,14 @@
     }
 
     @include for-size(desktop-up) {
-        width: 1170px;
+        width: 1280px;
     }
 }
 
 .container__fluid {
     @include for-size(desktop-up) {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
+        align-items: center;
     }
 }

@@ -4,14 +4,6 @@
         flex-flow: row wrap;
         justify-content: space-between;
     }
-
-    &-center {
-        @include for-size(tablet-portrait-up) {
-            width: 630px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-    }
 }
 
 .list__item {
@@ -19,28 +11,40 @@
     text-align: left;
     background: $main-white;
     padding: 30px 20px;
-    margin-top: 60px;
+    margin-bottom: 50px;
     position: relative;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='3' stroke-dasharray='16' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 
     @include for-size(tablet-portrait-up) {
         width: calc((100% - 30px) / 2);
-        margin-top: 0;
-        margin-bottom: 50px;
     }
 
-    &-center {
-        text-align: center;
-        padding: 50px 20px;
+    @include for-size(desktop-up) {
+        max-width: 300px;
+    }
+}
 
-        @include for-size(tablet-portrait-up) {
-            padding: 12px 44px;
-            margin-left: 30px;
-        }
+// .list__item:nth-last-child(n + 2) {
+//     @include for-size(desktop-up) {
+//     }
+//     margin-bottom: 0;
+// }
 
-        @include for-size(desktop-up) {
-            margin-bottom: 0;
-        }
+.list__center {
+    @include for-size(tablet-portrait-up) {
+        display: flex;
+    }
+}
+
+.item__center {
+    text-align: center;
+    padding: 50px 20px;
+    @include for-size(tablet-portrait-up) {
+        padding: 12px 44px;
+        margin-left: 30px;
+    }
+    @include for-size(desktop-up) {
+        margin-bottom: 0;
     }
 }
 
@@ -61,7 +65,7 @@
     @include font-source-sans(14px, null, 500, 1.2);
 
     @include for-size(tablet-portrait-up) {
-        font-size: 16px;
+        @include font-source-sans(16px, null, 500, 1.2);
     }
 }
 
