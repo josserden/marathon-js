@@ -14,32 +14,32 @@
     }
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(./images/img/header@2x-min.png);
+        background-image: url(../images/img/header@2x-min.png);
     }
 
     @include for-size(tablet-portrait-up) {
         background: {
-            image: url(./images/img/header-tab-min.png);
+            image: url(../images/img/header-tab-min.png);
             size: 379px;
             repeat: no-repeat;
             position: right 5px bottom;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(./images/img/header-tab@2px-min.png);
+            background-image: url(../images/img/header-tab@2px-min.png);
         }
     }
 
     @include for-size(desktop-up) {
         background: {
-            image: url(./images/img/header-pc-min.png);
+            image: url(../images/img/header-pc-min.png);
             size: 700px;
             repeat: no-repeat;
             position: right 50px bottom;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url(./images/img/header-pc@2px-min.png);
+            background-image: url(../images/img/header-pc@2px-min.png);
         }
     }
 
