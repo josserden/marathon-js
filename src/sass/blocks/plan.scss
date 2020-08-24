@@ -1,14 +1,41 @@
 .plan__list {
     list-style-type: disc;
+    padding: 20px;
     margin-bottom: 20px;
 
     @include for-size(tablet-portrait-up) {
-        max-width: 450px;
+        padding: 0 25px;
+    }
+
+    @include for-size(desktop-up) {
+        position: absolute;
+        max-width: 622px;
+        top: 37%;
+        right: 17%;
     }
 }
 
 .plan__item:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+@include for-size(tablet-portrait-up) {
+    .plan__item:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
+
+.plan__header {
+    @include for-size(tablet-portrait-up) {
+        padding: 0;
+        margin-left: auto;
+    }
+
+    @include for-size(desktop-up) {
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
 }
 
 .plan__text {
@@ -17,5 +44,27 @@
 
     @include for-size(tablet-portrait-up) {
         @include font-source-sans(22px, $main-black, 600, 1.2);
+    }
+}
+
+.plan__img {
+    width: 100vw;
+
+    @include for-size(tablet-portrait-up) {
+        max-width: 90%;
+    }
+
+    @include for-size(desktop-up) {
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+.plan__box {
+    @include for-size(tablet-portrait-up) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }

@@ -7,6 +7,10 @@
         padding: 50px;
     }
 
+    &__img {
+        width: 100vw;
+    }
+
     &__clr {
         position: relative;
         background-color: $accent-background;
