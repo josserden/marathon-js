@@ -4,13 +4,13 @@
     padding-right: 20px;
 
     @include for-size(tablet-portrait-up) {
-        width: 630px;
+        max-width: 630px;
         margin-right: auto;
         margin-left: auto;
     }
 
     @include for-size(desktop-up) {
-        width: 1290px;
+        max-width: 1290px;
     }
 }
 

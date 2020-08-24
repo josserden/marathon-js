@@ -63,6 +63,7 @@
 }
 
 .plan__box {
+    overflow: hidden;
     @include for-size(tablet-portrait-up) {
         display: flex;
         flex-direction: row-reverse;
