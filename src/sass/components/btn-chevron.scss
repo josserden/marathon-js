@@ -1,27 +1,70 @@
 .btn-chevron {
-    position: relative;
     display: inline-block;
+    position: relative;
+    padding: 16px 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background: $orange-accent;
     text: {
         align: center;
         decoration: none;
     }
     @include font-source-sans($main-text-s, $main-white, 600, 1.2);
     border: solid 1px $orange-accent;
-    padding: 16px 20px;
-    background-color: $orange-accent;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     cursor: pointer;
+
     @include for-size(tablet-portrait-up) {
         padding: 24px 30px;
+        margin-top: 40px;
         font-size: $main-text-m;
     }
 }
 
-.btn-chevron::after {
-    display: block;
-    content: '';
+.btn-chevron:after {
+    @include pseudo;
     position: absolute;
-    bottom: -1px;
-    right: -70px;
-    border: 35px solid transparent;
-    border-left: 36px solid $orange-accent;
+    width: 49px;
+    height: 49px;
+    background: {
+        image: url(../images/svg/chevron-right.svg);
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+    right: -49px;
+    top: -1px;
+}
+.btn-chevron:before {
+    @include pseudo;
+    position: absolute;
+    right: -19px;
+    bottom: 1px;
+    width: 0;
+    height: 0;
+    border-left: 21px solid $orange-accent;
+    border-top: 23px solid transparent;
+    border-bottom: 23px solid transparent;
+}
+
+.btn-chevron:hover {
+    opacity: 0.75;
+}
+
+@include for-size(tablet-portrait-up) {
+    .btn-chevron:before {
+        right: -26px;
+        bottom: -2px;
+        border-left: 30px solid $orange-accent;
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent;
+    }
+
+    .btn-chevron:after {
+        width: 65px;
+        height: 70px;
+        right: -66px;
+        top: -2px;
+    }
 }

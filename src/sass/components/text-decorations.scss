@@ -28,3 +28,9 @@
 .bold {
     font-weight: 800;
 }
+
+.accent {
+    display: inline-block;
+    vertical-align: text-top;
+    color: $orange-accent;
+}

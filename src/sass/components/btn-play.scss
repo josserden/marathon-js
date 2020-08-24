@@ -1,0 +1,29 @@
+.btn__play {
+    display: block;
+    @include size(80px, 80px);
+    border-radius: 50%;
+    background: {
+        image: url(../images/svg/btn-play.svg);
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        position: absolute;
+        @include size(100px, 100px);
+        z-index: 1;
+        bottom: 150px;
+    }
+
+    @include for-size(desktop-up) {
+        bottom: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.btn__play:hover,
+.btn__play:focus {
+    opacity: 0.8;
+}

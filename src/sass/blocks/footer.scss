@@ -37,6 +37,11 @@
     @include font-source-sans(14px, $main-black, 500, 1.2);
     text-decoration: none;
     margin-top: 10px;
+
+    &:hover,
+    &:focus {
+        color: $orange-accent;
+    }
 }
 
 .social__box {
