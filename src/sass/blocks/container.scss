@@ -1,12 +1,12 @@
 .container {
     width: 100%;
-    padding: 28px 20px;
-    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @include for-size(tablet-portrait-up) {
         width: 630px;
-        padding: 20px;
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     @include for-size(desktop-up) {
