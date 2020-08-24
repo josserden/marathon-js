@@ -1,0 +1,32 @@
+.it__list {
+    @include for-size(desktop-up) {
+        margin-bottom: 50px;
+    }
+
+    &-item {
+        margin-bottom: 15px;
+
+        @include for-size(tablet-portrait-up) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.it__text {
+    @extend %reset;
+    @include font-source-sans(14px, null, 500, 1.2);
+
+    @include for-size(tablet-portrait-up) {
+        @include font-source-sans(16px, null, 500, 1.2);
+    }
+}
+
+.it__icon {
+    @include pseudo;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: -30px;
+    border-radius: 50%;
+}

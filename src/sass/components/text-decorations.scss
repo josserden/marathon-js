@@ -1,0 +1,30 @@
+.accent__white {
+    color: $main-white;
+    font-size: 20px;
+    text-align: left;
+    @include for-size(tablet-portrait-up) {
+        font-size: 34px;
+    }
+    @include for-size(desktop-up) {
+        padding: 20px 12px;
+        margin-bottom: 0;
+    }
+}
+
+.text {
+    font-size: 16px;
+
+    @include for-size(tablet-portrait-up) {
+        font-size: 22px;
+    }
+}
+
+.center {
+    @include for-size(desktop-up) {
+        padding: 0 100px;
+    }
+}
+
+.bold {
+    font-weight: 800;
+}

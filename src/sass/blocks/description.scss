@@ -1,0 +1,10 @@
+.descr__icon {
+    @include pseudo;
+    width: 70px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    border-radius: 50%;
+}

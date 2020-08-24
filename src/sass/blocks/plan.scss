@@ -1,0 +1,21 @@
+.plan__list {
+    list-style-type: disc;
+    margin-bottom: 20px;
+
+    @include for-size(tablet-portrait-up) {
+        max-width: 450px;
+    }
+}
+
+.plan__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.plan__text {
+    @extend %reset;
+    @include font-source-sans(16px, $main-black, 600, 1.2);
+
+    @include for-size(tablet-portrait-up) {
+        @include font-source-sans(22px, $main-black, 600, 1.2);
+    }
+}
