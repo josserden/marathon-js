@@ -49,6 +49,8 @@
         @extend %reset;
         @include font-source-sans(20px, null, 500, 1.2);
         margin-bottom: 10px;
+        z-index: 1;
+        position: relative;
 
         @include for-size(tablet-portrait-up) {
             @include font-source-sans(34px, null, 500, 1.2);
