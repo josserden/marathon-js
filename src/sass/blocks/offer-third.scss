@@ -1,8 +1,37 @@
+.offer__third {
+    @include for-size(desktop-up) {
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
 .offer__third > .section__header {
     margin-bottom: 0;
 
     @include for-size(tablet-portrait-up) {
         padding: 0 50px;
+    }
+
+    @include for-size(desktop-up) {
+        width: 44%;
+        padding: 0;
+        margin-right: 30px;
+    }
+}
+
+.offer__third > .section__header > .accent__white {
+    @include for-size(desktop-up) {
+        display: inline-block;
+        width: 70%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
+
+.offer__third > .section__text {
+    @include for-size(desktop-up) {
+        padding: 0;
     }
 }
 
@@ -11,5 +40,10 @@
 
     @include for-size(tablet-portrait-up) {
         margin-left: 50px;
+    }
+
+    @include for-size(desktop-up) {
+        margin-top: 0;
+        margin-left: 0;
     }
 }
