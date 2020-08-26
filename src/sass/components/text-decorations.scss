@@ -17,6 +17,11 @@
     @include for-size(tablet-portrait-up) {
         font-size: 22px;
     }
+
+    &__center {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 .center {
