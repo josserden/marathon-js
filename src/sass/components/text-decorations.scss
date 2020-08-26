@@ -21,6 +21,10 @@
     &__center {
         text-align: center;
         margin-top: 20px;
+
+        @include for-size(tablet-portrait-up) {
+            text-align: left;
+        }
     }
 }
 

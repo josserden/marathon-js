@@ -34,4 +34,8 @@
 .btn__center {
     display: block;
     text-align: center;
+
+    @include for-size(tablet-portrait-up) {
+        display: inline-block;
+    }
 }
