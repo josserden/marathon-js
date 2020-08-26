@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){console.log("ok"),$(".inline").modaal()}),console.log("hello");
