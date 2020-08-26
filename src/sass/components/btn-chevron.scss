@@ -3,7 +3,6 @@
     position: relative;
     padding: 16px 20px;
     margin-top: 20px;
-    margin-bottom: 100px;
     background: $orange-accent;
     text: {
         align: center;
@@ -17,7 +16,6 @@
 
     @include for-size(tablet-portrait-up) {
         padding: 24px 30px;
-        margin-top: 50px;
         font-size: $main-text-m;
     }
 }

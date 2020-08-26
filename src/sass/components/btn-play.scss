@@ -2,6 +2,7 @@
     display: block;
     @include size(80px, 80px);
     border-radius: 50%;
+    margin-top: 100px;
     background: {
         image: url(../images/svg/btn-play.svg);
         size: cover;
@@ -11,13 +12,14 @@
 
     @include for-size(tablet-portrait-up) {
         @include size(100px, 100px);
-        margin-left: 40px;
+        margin-top: 150px;
+        margin-left: 100px;
     }
 
     @include for-size(desktop-up) {
         position: absolute;
         bottom: 200px;
-        left: 50%;
+        left: 45%;
         transform: translateX(-50%);
     }
 }

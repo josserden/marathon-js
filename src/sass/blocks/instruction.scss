@@ -23,9 +23,9 @@
     @include for-size(desktop-up) {
         background: {
             image: url(../images/img/pc-pc-min.png);
-            // size: 50%;
+            size: 100%;
             repeat: no-repeat;
-            // position: right 50px bottom;
+            position: center center;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -37,5 +37,22 @@
         @include for-size(tablet-portrait-up) {
             padding-right: 200px;
         }
+
+        @include for-size(desktop-up) {
+            width: 30%;
+            padding-right: 0;
+            margin-left: 50px;
+        }
+    }
+
+    .instruction__header {
+        width: 40%;
+        padding: 0;
+    }
+}
+
+.left {
+    @include for-size(desktop-up) {
+        justify-content: inherit;
     }
 }
