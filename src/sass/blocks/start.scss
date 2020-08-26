@@ -1,0 +1,95 @@
+.start {
+    @include for-size(tablet-portrait-up) {
+        display: flex;
+    }
+
+    &__content {
+        @include for-size(tablet-portrait-up) {
+            width: 38%;
+        }
+    }
+
+    &__img {
+        @include for-size(tablet-portrait-up) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 58%;
+            margin-left: 4%;
+        }
+    }
+
+    &__text {
+        @include font-source-sans($main-text-s, $main-white, 500, 1.2);
+
+        @include for-size(tablet-portrait-up) {
+            font-size: 16px;
+        }
+    }
+
+    &__item {
+        padding: 10px;
+        background-color: $gray;
+        border-radius: 10px;
+        border-bottom-left-radius: 0;
+        position: relative;
+        margin-bottom: 10px;
+
+        @include for-size(tablet-portrait-up) {
+            // width: 50%;
+            padding: 15px;
+        }
+    }
+}
+
+.start__bgr {
+    @include for-size(tablet-portrait-up) {
+        background-image: url(../images/svg/vector2-tab.svg);
+        background-size: 65%;
+        background-repeat: no-repeat;
+        background-position: bottom right -15%;
+    }
+
+    @media only screen and (min-device-width: 960px) and (max-device-width: 1024px) {
+        background-size: 64%;
+        background-repeat: no-repeat;
+        background-position: bottom 40% right -9%;
+    }
+
+    @include for-size(desktop-up) {
+        background-position: bottom 45% right;
+    }
+}
+
+// Heading
+.start__img .section__title {
+    @include font-source-sans($subtitle-s, $main-white, 500, 1.2);
+    text-align: center;
+
+    @include for-size(tablet-portrait-up) {
+        font-size: $subtitle-m;
+    }
+}
+
+// Image
+.start__content img {
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: 0;
+    }
+}
+
+// Pseudo Triangle
+.start__item::before {
+    content: '';
+    width: 0;
+    height: 0;
+    right: 100%;
+    bottom: 0;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-right: 16px solid $gray;
+    border-bottom: 0 solid transparent;
+}
