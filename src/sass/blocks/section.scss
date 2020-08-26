@@ -41,7 +41,7 @@
 
         @include for-size(tablet-portrait-up) {
             @include font-source-sans(64px, null, 800, 1.2);
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
     }
 

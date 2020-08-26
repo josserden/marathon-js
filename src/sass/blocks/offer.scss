@@ -47,14 +47,26 @@
     position: relative;
     background-color: $orange-accent;
 
+    @include for-size(tablet-portrait-up) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__info {
         @include for-size(tablet-portrait-up) {
-            width: calc((100% - 30px) / 12 * 7);
+            display: inline-block;
+            width: 385px;
             margin-bottom: 0;
+        }
+
+        @include for-size(desktop-up) {
+            width: 630px;
         }
     }
 
     &__content {
+        text-align: center;
         @include for-size(tablet-portrait-up) {
             display: inline-block;
             margin: 0 0 25px 64px;
@@ -93,7 +105,7 @@
 
     @include for-size(tablet-portrait-up) {
         top: 50%;
-        left: 56%;
+        left: 60%;
         transform: translate(-50%, -50%);
     }
 
