@@ -2,6 +2,14 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 40px;
+
+    &__header {
+        margin-bottom: 40px;
+
+        @include for-size(tablet-portrait-up) {
+            margin-bottom: 70px;
+        }
+    }
 }
 
 .descr__list {
@@ -18,6 +26,8 @@
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='3' stroke-dasharray='16' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 
     @include for-size(tablet-portrait-up) {
+        padding: 35px 20px;
+        flex-basis: 30%;
     }
 
     @include for-size(desktop-up) {
@@ -26,11 +36,25 @@
 
 .descr__item:not(:last-child) {
     margin-bottom: 50px;
+
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: inherit;
+    }
+}
+
+@include for-size(tablet-portrait-up) {
+    .descr__item + .descr__item {
+        margin-left: 30px;
+    }
 }
 
 .descr__title {
     font-size: 29px;
     text-align: center;
+
+    @include for-size(tablet-portrait-up) {
+        @include font-source-sans(64px, null, 800, 1.2);
+    }
 }
 
 .descr__icon {
