@@ -1,13 +1,12 @@
 .site__header {
-    @include size(100vw, auto);
-    overflow: hidden;
     min-height: 700px;
     max-width: 100%;
+    overflow: hidden;
     text-align: center;
     background: {
         color: $violet-accent;
         image: url(./images/img/header-min.png);
-        size: 75%;
+        size: 85%;
         repeat: no-repeat;
         position: right bottom -10px;
     }
@@ -32,6 +31,7 @@
     }
 
     @include for-size(desktop-up) {
+        min-height: 100vh;
         background: {
             image: url(../images/img/header-pc-min.png);
             size: 50%;
@@ -73,7 +73,7 @@
 
         @include for-size(tablet-portrait-up) {
             @include font-source-sans(22px, null, 500, 1.2);
-            margin-bottom: 50px;
+            margin-bottom: 70px;
         }
     }
 }
@@ -110,6 +110,7 @@
 
     @include for-size(desktop-up) {
         @include font-source-sans(64px, null, 800, 1.2);
+        margin-bottom: 50px;
     }
 
     &-text {

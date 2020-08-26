@@ -10,14 +10,13 @@
     }
 
     @include for-size(tablet-portrait-up) {
-        position: absolute;
         @include size(100px, 100px);
-        z-index: 1;
-        bottom: 150px;
+        margin-left: 40px;
     }
 
     @include for-size(desktop-up) {
-        bottom: 250px;
+        position: absolute;
+        bottom: 200px;
         left: 50%;
         transform: translateX(-50%);
     }
