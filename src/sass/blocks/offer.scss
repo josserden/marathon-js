@@ -53,6 +53,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-bottom: 40px;
+    }
+
+    @include for-size(desktop-up) {
+        justify-content: space-around;
     }
 
     &__info {
@@ -62,7 +67,9 @@
 
         @include for-size(tablet-portrait-up) {
             display: inline-block;
-            width: 385px;
+            width: 60%;
+            padding-left: 90px;
+            padding-right: 0;
             margin-bottom: 0;
         }
 
@@ -79,11 +86,13 @@
         margin-top: 40px;
 
         @include for-size(tablet-portrait-up) {
+            width: 40%;
             margin: 0 0 25px 64px;
         }
 
         @include for-size(desktop-up) {
             width: calc((100% - 30px) / 12 * 3);
+            margin-left: 0;
         }
     }
 
@@ -95,9 +104,9 @@
 
     &__text {
         @extend %reset;
-        padding: 0 5px;
+        padding: 0;
         @include font-source-sans(14px, $main-white, 500, 1.2);
-        margin-bottom: 10px;
+        margin-bottom: 0;
         z-index: 1;
         position: relative;
 
@@ -124,6 +133,11 @@
     }
     right: 23%;
     bottom: -34px;
+
+    @include for-size(tablet-portrait-up) {
+        right: 35px;
+        bottom: -35px;
+    }
 }
 
 .offer__ico::after {
@@ -139,6 +153,11 @@
     }
     top: 0;
     left: 8%;
+
+    @include for-size(tablet-portrait-up) {
+        top: 1%;
+        left: 0;
+    }
 }
 
 .offer-second::after {
@@ -162,9 +181,27 @@
     }
 
     @include for-size(desktop-up) {
-        top: 50%;
-        left: 60%;
-        transform: translate(-50%, -50%);
+        top: inherit;
+        left: inherit;
+        right: 43%;
+        bottom: 59px;
+    }
+}
+
+@include for-size(desktop-up) {
+    .offer-second::before {
+        @include pseudo;
+        position: absolute;
+        width: 65px;
+        height: 70px;
+        background: {
+            image: url(../images/svg/chevron-violet-left.svg);
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+        left: 100px;
+        top: 90px;
     }
 }
 
