@@ -1,3 +1,14 @@
+.description {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+}
+
+.descr__title {
+    font-size: 29px;
+    text-align: center;
+}
+
 .descr__icon {
     @include pseudo;
     width: 70px;
@@ -5,6 +16,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -30px;
+    top: -40px;
     border-radius: 50%;
 }
