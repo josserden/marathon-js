@@ -60,7 +60,7 @@
     @include font-source-sans(16px, $orange-accent, 600, 1.2);
     position: absolute;
     top: -25px;
-    left: 0;
+    left: 10px;
 
     @include for-size(tablet-portrait-up) {
         font-size: 22px;
