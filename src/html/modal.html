@@ -1,7 +1,29 @@
 <div id="inline" style="display: none">
-    <p>
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu
-        leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-    </p>
+    <div class="form__field">
+        <h2 class="form__heading">МАРАФОН С JAVASCRIPT</h2>
+        <form class="form" action="#" method="post">
+            <label for="email"><p class="label__text">E-mail</p></label>
+            <input
+                class="form__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+            />
+            <label for="tel"> <p class="label__text">Телефон</p></label>
+            <input
+                class="form__input"
+                type="text"
+                name="tel"
+                id="tel"
+                placeholder="38 0-- --- -- --"
+                required
+            />
+        </form>
+        <button class="btn btn__center">Хочу на марафон</button>
+        <p class="it__text text__center">
+            Старт <span class="bold">31 августа</span>
+        </p>
+    </div>
 </div>
