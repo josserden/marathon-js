@@ -1,14 +1,16 @@
 .footer {
     display: flex;
+    justify-content: center;
     padding: 20px 0 30px;
 
     &__item {
-        width: calc((100%-2 * 15px) / 2);
+        // width: calc((100%-2 * 15px) / 2);
+        width: 45%;
     }
 }
 
 .footer__item + .footer__item {
-    margin-left: 15px;
+    margin-left: 25px;
 
     @include for-size(tablet-portrait-up) {
         margin-left: 60px;
@@ -47,12 +49,12 @@
 .social__box {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
     margin-top: 20px;
     margin-right: -20px;
 }
 
 .social__item {
-    flex-basis: calc((100%-4 * 20px) / 4);
     margin-right: 20px;
     margin-bottom: 20px;
 
@@ -85,7 +87,7 @@
 }
 
 .social__icon {
-    @include size(33px, 33px);
+    @include size(40px, 40px);
     cursor: pointer;
 }
 
