@@ -10,10 +10,16 @@ $main-white: #ffffff;
 $white-opacity: rgba(255, 255, 255, 0.4);
 $gray: rgba(247, 247, 247, 0.2);
 
-//Font size
+// Font size
 $main-text-s: 14px;
 $main-text-m: 16px;
 $main-title-s: 32px;
 $main-title-m: 64px;
 $subtitle-s: 20px;
 $subtitle-m: 34px;
+
+// Modal
+
+$form-bg: #f7f7f7;
+$form-invalid: #ff2d2d;
+$placeholder-clr: #c4c4c4;

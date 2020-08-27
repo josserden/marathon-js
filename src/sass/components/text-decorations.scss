@@ -37,6 +37,13 @@
 
 .bold {
     font-weight: 800;
+
+    @include for-size(tablet-portrait-up) {
+        font-weight: 800;
+    }
+    @include for-size(desktop-up) {
+        font-weight: 800;
+    }
 }
 
 .accent {

@@ -4,7 +4,6 @@
     padding: 20px 0 30px;
 
     &__item {
-        // width: calc((100%-2 * 15px) / 2);
         width: 45%;
     }
 }
@@ -38,6 +37,12 @@
 
     @include for-size(desktop-up) {
         margin-right: 38px;
+    }
+}
+
+.contact__item > .it__text {
+    @include for-size(tablet-portrait-up) {
+        font-weight: 800;
     }
 }
 
