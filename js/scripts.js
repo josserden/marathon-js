@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){console.log("ok"),$(".inline").modaal()}),console.log("hello");
+"use strict";$(document).ready(function(){$(".inline").modaal(),$(".image").modaal({type:"image"})});
