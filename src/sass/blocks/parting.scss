@@ -17,3 +17,11 @@
         }
     }
 }
+
+.parting h2 {
+    letter-spacing: normal;
+}
+
+.section__chevron::after .parting {
+    top: 135px;
+}

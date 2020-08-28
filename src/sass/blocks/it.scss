@@ -4,10 +4,10 @@
     }
 
     &-item {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
 
         @include for-size(tablet-portrait-up) {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
     }
 }
@@ -15,6 +15,7 @@
 .it__text {
     @extend %reset;
     @include font-source-sans(14px, null, 500, 1.2);
+    letter-spacing: 0.03em;
 
     @include for-size(tablet-portrait-up) {
         @include font-source-sans(16px, null, 500, 1.2);

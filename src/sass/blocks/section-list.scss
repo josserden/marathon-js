@@ -24,7 +24,7 @@
 }
 
 .list__item:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 @include for-size(tablet-portrait-up) {
@@ -58,6 +58,7 @@
 .item__title {
     @extend %reset;
     @include font-source-sans(16px, $orange-accent, 600, 1.2);
+    letter-spacing: 0.03em;
     position: absolute;
     top: -25px;
     left: 10px;
@@ -80,6 +81,7 @@
     &-clr {
         @extend %reset;
         @include font-source-sans(16px, $orange-accent, 600, 1.2);
+        letter-spacing: 0.03em;
 
         @include for-size(tablet-portrait-up) {
             @include font-source-sans(22px, $orange-accent, 600, 1.2);

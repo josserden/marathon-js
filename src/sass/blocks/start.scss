@@ -75,6 +75,7 @@
 .start__img .section__title {
     @include font-source-sans($subtitle-s, $main-white, 500, 1.2);
     text-align: center;
+    letter-spacing: normal;
 
     @include for-size(tablet-portrait-up) {
         font-size: $subtitle-m;
@@ -112,4 +113,8 @@
         margin-right: auto;
         padding: 14px 70px;
     }
+}
+
+.start__item p {
+    margin: 0;
 }

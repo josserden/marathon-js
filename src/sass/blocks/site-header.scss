@@ -6,7 +6,7 @@
     background: {
         color: $violet-accent;
         image: url(./images/img/header-min.png);
-        size: 85%;
+        size: 70%;
         repeat: no-repeat;
         position: right bottom -10px;
     }
@@ -62,7 +62,8 @@
         margin-bottom: 10px;
 
         @include for-size(tablet-portrait-up) {
-            @include font-source-sans(34px, null, 500, 1.2);
+            @include font-source-sans(34px, null, 500, 1.2178);
+            margin-bottom: 20px;
         }
     }
 
@@ -70,7 +71,7 @@
         @extend %reset;
         @include font-source-sans(16px, null, 600, 1.2);
         margin-bottom: 40px;
-
+        letter-spacing: 0.03em;
         @include for-size(tablet-portrait-up) {
             @include font-source-sans(22px, null, 500, 1.2);
             margin-bottom: 70px;
@@ -103,6 +104,7 @@
     @extend %reset;
     @include font-source-sans(32px, null, 800, 1.2);
     position: relative;
+    margin-bottom: 20px;
 
     @include for-size(tablet-portrait-up) {
         @include font-source-sans(48px, null, 800, 1.2);

@@ -62,7 +62,8 @@
     &__text {
         @extend %reset;
         padding: 0;
-        @include font-source-sans(14px, $main-white, 500, 1.2);
+        @include font-source-sans(16px, $main-white, 500, 1.2);
+        letter-spacing: 0.03em;
         margin-bottom: 0;
         z-index: 1;
         position: relative;

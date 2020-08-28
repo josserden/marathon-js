@@ -35,7 +35,7 @@
 }
 
 .descr__item:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 63px;
 
     @include for-size(tablet-portrait-up) {
         margin-bottom: inherit;
@@ -51,6 +51,7 @@
 .descr__title {
     font-size: 29px;
     text-align: center;
+    margin-bottom: 63px;
 
     @include for-size(tablet-portrait-up) {
         @include font-source-sans(64px, null, 800, 1.2);
@@ -59,7 +60,7 @@
 
 .descr__icon {
     @include pseudo;
-    width: 70px;
+    width: 200px;
     height: 65px;
     position: absolute;
     left: 50%;

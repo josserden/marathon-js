@@ -40,6 +40,10 @@
     }
 }
 
+.contact__item p {
+    letter-spacing: normal;
+}
+
 .contact__item > .it__text {
     @include for-size(tablet-portrait-up) {
         font-weight: 800;

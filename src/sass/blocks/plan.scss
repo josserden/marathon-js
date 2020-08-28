@@ -28,8 +28,8 @@
 
 .plan__header {
     margin-bottom: 0;
+    padding: 0;
     @include for-size(tablet-portrait-up) {
-        padding: 0;
         margin-left: auto;
     }
 
@@ -40,9 +40,15 @@
     }
 }
 
+.plan__header h2 {
+    letter-spacing: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 .plan__text {
     @extend %reset;
     @include font-source-sans(16px, $main-black, 600, 1.2);
+    letter-spacing: normal;
 
     @include for-size(tablet-portrait-up) {
         @include font-source-sans(22px, $main-black, 600, 1.2);

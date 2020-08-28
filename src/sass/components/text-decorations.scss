@@ -2,6 +2,7 @@
     color: $main-white;
     font-size: 20px;
     text-align: left;
+    letter-spacing: 0.03em;
     @include for-size(tablet-portrait-up) {
         font-size: 34px;
     }
@@ -30,6 +31,7 @@
 }
 
 .center {
+    letter-spacing: normal;
     @include for-size(desktop-up) {
         padding: 0 100px;
     }

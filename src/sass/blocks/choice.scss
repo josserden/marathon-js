@@ -1,5 +1,7 @@
 .choice {
     position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
 
     &__box {
         @include for-size(tablet-portrait-up) {
@@ -10,6 +12,10 @@
     &__img {
         cursor: zoom-in;
     }
+}
+
+.choice__box h2 {
+    letter-spacing: 0.03em;
 }
 
 .choice::before {
