@@ -3,6 +3,10 @@
     padding-right: 0;
     padding-bottom: 40px;
 
+    @include for-size(desktop-up) {
+        padding-bottom: 70px;
+    }
+
     &__header {
         margin-bottom: 40px;
 
@@ -15,6 +19,7 @@
 .descr__list {
     @include for-size(tablet-portrait-up) {
         display: flex;
+        justify-content: center;
     }
 }
 
@@ -30,9 +35,6 @@
         flex-basis: 30%;
         display: flex;
         align-items: center;
-    }
-
-    @include for-size(desktop-up) {
     }
 }
 

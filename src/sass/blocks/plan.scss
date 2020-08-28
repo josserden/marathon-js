@@ -35,7 +35,7 @@
 
     @include for-size(desktop-up) {
         position: absolute;
-        top: 10%;
+        top: 110px;
         right: 0;
     }
 }
@@ -81,5 +81,10 @@
         flex-direction: row-reverse;
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    @include for-size(desktop-up) {
+        padding-top: 80px;
+        padding-bottom: 83px;
     }
 }

@@ -12,6 +12,7 @@
 
     @include for-size(desktop-up) {
         max-width: 1290px;
+        padding: 0;
     }
 }
 

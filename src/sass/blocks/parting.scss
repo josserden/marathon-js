@@ -8,7 +8,7 @@
         }
     }
     @include for-size(desktop-up) {
-        padding: 20px;
+        padding: 60px;
         background: {
             image: url(../images/svg/serp-pc.svg);
             size: cover;
@@ -20,6 +20,11 @@
 
 .parting h2 {
     letter-spacing: normal;
+
+    @include for-size(desktop-up) {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .parting h2::after {
@@ -43,7 +48,6 @@
 
     @include for-size(desktop-up) {
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
     }
 }
@@ -55,6 +59,14 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 0;
+        position: relative;
+    }
+
+    @include for-size(desktop-up) {
+        width: inherit;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
     }
 }
 
@@ -62,8 +74,53 @@
     @include for-size(tablet-portrait-up) {
         margin-bottom: 30px;
     }
+
+    @include for-size(desktop-up) {
+        width: 80%;
+        margin-bottom: 0;
+    }
+}
+
+.parting .section__text {
+    @include for-size(desktop-up) {
+        width: 80%;
+        margin-left: auto;
+        margin-bottom: 0;
+    }
 }
 
 .section__chevron::after .parting {
     top: 135px;
+}
+
+.parting p::before {
+    @include for-size(desktop-up) {
+        @include pseudo;
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -30px;
+        right: -320px;
+        background: {
+            image: url(../images/svg/eclipse.svg);
+            size: cover;
+        }
+    }
+}
+
+.parting p::after {
+    @include for-size(desktop-up) {
+        @include pseudo;
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: -12px;
+        right: -304px;
+        background: {
+            color: $main-black;
+        }
+    }
 }

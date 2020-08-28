@@ -25,10 +25,12 @@
     }
 
     @include for-size(desktop-up) {
+        padding-bottom: 200px;
         background: {
             image: url(../images/img/vector-pc-min.png);
+            size: 95%;
             repeat: no-repeat;
-            position: center;
+            position: 0 50px;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
