@@ -11,17 +11,24 @@
                 placeholder="E-mail"
                 required
             />
-            <label for="tel"> <span class="label__text">Телефон</span></label>
+            <label for="tel"><span class="label__text">Телефон</span></label>
             <input
                 class="form__input"
-                type="text"
-                name="tel"
+                type="tel"
+                name="phone"
                 id="tel"
-                placeholder="38 0-- --- -- --"
+                placeholder="Phone"
                 required
             />
+            <input type="hidden" name="utm_source" value="" />
+            <input type="hidden" name="utm_medium" value="" />
+            <input type="hidden" name="utm_term" value="" />
+            <input type="hidden" name="utm_campaign" value="" />
+            <input type="hidden" name="utm_content" value="" />
+            <button class="btn btn__center submit" type="submit">
+                Хочу на марафон
+            </button>
         </form>
-        <button class="btn btn__center" type="submit">Хочу на марафон</button>
         <p class="it__text text__center">
             Старт <span class="bold">31 августа</span>
         </p>
