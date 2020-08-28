@@ -5,12 +5,6 @@
     background-color: $form-bg;
 }
 
-.modaal-close {
-    @include for-size(desktop-up) {
-        top: 15%;
-        right: 30%;
-    }
-}
 .form__field {
     display: flex;
     flex-direction: column;

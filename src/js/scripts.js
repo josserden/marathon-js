@@ -1,9 +1,8 @@
-// import modaal from '~../../node_modules/modaal/source/js/modaal.js';
+'use strict';
 
 $(document).ready(function () {
-    console.log('ok');
-
     $('.inline').modaal();
+    $('.image').modaal({
+        type: 'image',
+    });
 });
-
-console.log('hello');
