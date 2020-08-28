@@ -4,7 +4,7 @@
             image: url(../images/svg/serpantine.svg);
             size: cover;
             repeat: no-repeat;
-            position: center;
+            position: 0 0;
         }
     }
     @include for-size(desktop-up) {
@@ -20,6 +20,48 @@
 
 .parting h2 {
     letter-spacing: normal;
+}
+
+.parting h2::after {
+    @include pseudo;
+    position: absolute;
+    width: 65px;
+    height: 70px;
+    background: {
+        image: url(../images/svg/chevron-right.svg);
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+    top: 96px;
+    right: -18px;
+
+    @include for-size(tablet-portrait-up) {
+        top: 30px;
+        right: -50px;
+    }
+
+    @include for-size(desktop-up) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.parting header,
+.parting p {
+    @include for-size(tablet-portrait-up) {
+        width: 61%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+}
+
+.parting header {
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: 30px;
+    }
 }
 
 .section__chevron::after .parting {

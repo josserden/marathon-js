@@ -28,6 +28,8 @@
     @include for-size(tablet-portrait-up) {
         padding: 35px 20px;
         flex-basis: 30%;
+        display: flex;
+        align-items: center;
     }
 
     @include for-size(desktop-up) {

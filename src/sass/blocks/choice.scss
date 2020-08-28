@@ -5,7 +5,7 @@
 
     &__box {
         @include for-size(tablet-portrait-up) {
-            padding: 0 100px;
+            padding: 0 80px;
         }
     }
 
@@ -22,16 +22,13 @@
     @include for-size(tablet-portrait-up) {
         @include pseudo;
         position: absolute;
-        width: 187px;
-        height: 564px;
-        background: {
-            image: url(../images/img/1dol-right-tab-min.png);
-            size: contain;
-            repeat: no-repeat;
-            position: center;
-        }
+        width: 230px;
+        height: 566px;
+        background-image: url(../images/img/1dol-right-tab-min.png);
+        background-size: contain;
+        background-repeat: no-repeat;
         right: 0;
-        bottom: 64px;
+        bottom: 136px;
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/img/1dol-right-tab@2x-min.png);
@@ -47,7 +44,6 @@
             image: url(../images/img/1dol-pc-right-min.png);
             size: contain;
             repeat: no-repeat;
-            position: center;
         }
         right: 0;
         bottom: 106px;
@@ -62,16 +58,15 @@
     @include for-size(tablet-portrait-up) {
         @include pseudo;
         position: absolute;
-        width: 187px;
-        height: 490px;
+        width: 160px;
+        height: 650px;
         background: {
             image: url(../images/img/1dol-tab-left-min.png);
             size: cover;
             repeat: no-repeat;
-            position: center;
         }
-        left: 0;
-        bottom: 500px;
+        left: -30px;
+        bottom: 525px;
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url(../images/img/1dol-tab-left@2x-min.png);

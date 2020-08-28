@@ -44,7 +44,13 @@
     letter-spacing: normal;
     margin-top: 40px;
     margin-bottom: 20px;
+
+    @include for-size(tablet-portrait-up) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
+
 .plan__text {
     @extend %reset;
     @include font-source-sans(16px, $main-black, 600, 1.2);

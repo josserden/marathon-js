@@ -15,6 +15,10 @@
         position: relative;
         background-color: $accent-background;
 
+        @include for-size(tablet-portrait-up) {
+            padding-top: 60px;
+        }
+
         &-accent {
             background-color: $violet-accent;
         }
@@ -27,6 +31,7 @@
         @include for-size(tablet-portrait-up) {
             margin-bottom: 50px;
         }
+
         @include for-size(desktop-up) {
             width: calc((100% - 30px) / 12 * 7);
             margin-bottom: 0;
@@ -87,7 +92,7 @@
 
     @include for-size(tablet-portrait-up) {
         right: 20px;
-        top: 118px;
+        top: 145px;
     }
 
     @include for-size(desktop-up) {

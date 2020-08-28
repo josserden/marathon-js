@@ -18,6 +18,7 @@
 
     @include for-size(tablet-portrait-up) {
         padding: 24px 30px;
+        margin-top: 40px;
         font-size: $main-text-m;
     }
 }

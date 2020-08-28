@@ -14,9 +14,9 @@
     @include for-size(tablet-portrait-up) {
         background: {
             image: url(../images/img/vector-tab-min.png);
-            size: contain;
+            size: 100%;
             repeat: no-repeat;
-            position: center;
+            position: 0px 150px;
         }
 
         @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -45,4 +45,9 @@
 
 .offer__title .section__title {
     margin-bottom: 50px;
+
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: 70px;
+        letter-spacing: 0.01em;
+    }
 }
