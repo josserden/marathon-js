@@ -81,6 +81,7 @@
     &-clr {
         @extend %reset;
         @include font-source-sans(16px, $orange-accent, 600, 1.2);
+        margin-bottom: 20px;
         letter-spacing: 0.03em;
 
         @include for-size(tablet-portrait-up) {

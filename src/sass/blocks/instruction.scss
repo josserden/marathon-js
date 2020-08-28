@@ -51,11 +51,19 @@
         }
     }
 
+    .instruction__header {
+        margin-bottom: 20px;
+    }
+
     .instruction__header h2 {
         padding: 0;
         letter-spacing: normal;
         margin-bottom: 0;
     }
+}
+
+.instruction__list a {
+    padding: 14px 72px;
 }
 
 .left {
