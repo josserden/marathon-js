@@ -52,4 +52,8 @@
         margin-bottom: 70px;
         letter-spacing: 0.01em;
     }
+
+    @include for-size(desktop-up) {
+        margin-bottom: 90px;
+    }
 }
