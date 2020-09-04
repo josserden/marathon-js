@@ -52,6 +52,7 @@
 }
 
 .label__text {
+    display: inline-block;
     @extend %reset;
     @include font-source-sans(12px, $main-black, 500, 1.2);
     margin-bottom: 5px;
