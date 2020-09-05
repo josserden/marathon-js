@@ -54,11 +54,11 @@
 
 @mixin for-size($size) {
     @if $size==phone-only {
-        @media (max-width: 599px) {
+        @media (max-width: 670px) {
             @content;
         }
     } @else if $size==tablet-portrait-up {
-        @media (min-width: 600px) {
+        @media (min-width: 671px) {
             @content;
         }
     } @else if $size==tablet-landscape-up {
