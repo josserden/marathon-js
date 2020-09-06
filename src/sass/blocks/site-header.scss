@@ -30,6 +30,10 @@
         }
     }
 
+    @include for-size(tablet-landscape-up) {
+        background-size: 65%;
+    }
+
     @include for-size(desktop-up) {
         min-height: 100vh;
         background: {

@@ -50,6 +50,7 @@
         "usedcss": "^1.0.7"
     },
     "dependencies": {
+        "circletype": "^2.3.0",
         "modaal": "^0.4.4"
     }
 }

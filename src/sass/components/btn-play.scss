@@ -1,17 +1,8 @@
-.btn__play {
-    display: block;
-    @include size(80px, 80px);
-    border-radius: 50%;
+.play-box {
+    position: relative;
     margin-top: 100px;
-    background: {
-        image: url(../images/svg/btn-play.svg);
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
 
     @include for-size(tablet-portrait-up) {
-        @include size(100px, 100px);
         margin-top: 142px;
         margin-left: 35px;
     }
@@ -22,6 +13,55 @@
         left: 45%;
         transform: translateX(-50%);
     }
+
+    .play-box-text {
+        font-size: 6px;
+        color: $main-white;
+        letter-spacing: normal;
+        position: absolute;
+        top: 27px;
+        left: 32px;
+        animation: animate 20s infinite linear;
+
+        @include for-size(tablet-portrait-up) {
+            font-size: 8px;
+            top: 34px;
+            left: 42px;
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.btn__play {
+    display: block;
+    @include size(65px, 65px);
+
+    background: {
+        image: url(../images/svg/btn-play.svg);
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        @include size(85px, 85px);
+    }
+
+    // @include for-size(desktop-up) {
+    //     position: absolute;
+    //     bottom: 200px;
+    //     left: 45%;
+    //     transform: translateX(-50%);
+    // }
 }
 
 .btn__play:hover,
