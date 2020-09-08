@@ -2,6 +2,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 40px;
+    background-color: $white-accent;
 
     @include for-size(desktop-up) {
         padding-bottom: 70px;

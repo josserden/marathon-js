@@ -82,7 +82,7 @@
         }
     }
 
-    &-item :last-child {
+    &-item:last-of-type {
         margin-bottom: 24px;
 
         @include for-size(tablet-portrait-up) {
@@ -93,7 +93,10 @@
 
 .plan-item-text {
     margin: 0;
-    font-size: 16px;
+    font: {
+        size: 16px;
+        weight: 600;
+    }
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
 
@@ -107,4 +110,3 @@
     font-weight: 800;
     color: $orange-accent;
 }
-
