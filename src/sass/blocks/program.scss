@@ -55,11 +55,15 @@
     &-second {
         @include for-size(tablet-portrait-up) {
             right: 0;
-            bottom: 250px;
+            bottom: 308px;
+        }
+
+        @include for-size(tablet-landscape-up) {
+            bottom: 322px;
         }
 
         @include for-size(desktop-up) {
-            bottom: 0;
+            bottom: 68px;
         }
     }
 }
