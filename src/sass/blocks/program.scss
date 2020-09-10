@@ -55,7 +55,7 @@
     &-second {
         @include for-size(tablet-portrait-up) {
             right: 0;
-            bottom: 308px;
+            bottom: 286px;
         }
 
         @include for-size(tablet-landscape-up) {
