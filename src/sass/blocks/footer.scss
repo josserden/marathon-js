@@ -85,6 +85,14 @@
     }
 }
 
+.social__item:nth-child(even) {
+    margin-right: 0;
+
+    @include for-size(tablet-portrait-up) {
+        margin-right: inherit;
+    }
+}
+
 .social__item:nth-last-child(-n + 2) {
     margin-bottom: 0;
 }
@@ -99,7 +107,7 @@
         margin-right: 20px;
     }
 
-    .social__item:nth-last-child() {
+    .social__item:last-child {
         margin-right: 0;
     }
 
@@ -116,4 +124,21 @@
 .social__icon :hover,
 .social__icon:focus {
     opacity: 0.8;
+}
+
+.payment__box {
+    display: flex;
+    justify-content: center;
+}
+
+.payment__item + .payment__item {
+    margin-left: 30px;
+
+    @include for-size(tablet-portrait-up) {
+        margin-left: 35px;
+    }
+}
+
+.payment__icon {
+    @include size(60px, 60px);
 }
