@@ -1,3 +1,7 @@
+footer .wrapper {
+    align-items: flex-end;
+}
+
 .footer {
     display: flex;
     justify-content: center;
@@ -16,6 +20,12 @@
     }
 }
 
+.footer__item:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .contact__list {
     @include for-size(tablet-portrait-up) {
         display: flex;
@@ -31,6 +41,10 @@
 }
 
 .contact__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     @include for-size(tablet-portrait-up) {
         width: 45%;
     }
@@ -72,7 +86,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
-    margin-top: 20px;
     margin-right: -20px;
 }
 
@@ -129,6 +142,7 @@
 .payment__box {
     display: flex;
     justify-content: center;
+    padding: 20px 0 30px;
 }
 
 .payment__item + .payment__item {
@@ -140,5 +154,6 @@
 }
 
 .payment__icon {
-    @include size(60px, 60px);
+    max-width: 50px;
+    @include size(50px, 50px);
 }
