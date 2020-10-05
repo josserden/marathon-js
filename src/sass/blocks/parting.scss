@@ -7,13 +7,17 @@
             position: 0 0;
         }
     }
+
+    @include for-size(tablet-landscape-up) {
+        background-position: center;
+    }
+
     @include for-size(desktop-up) {
         padding: 60px;
         background: {
             image: url(../images/svg/serp-pc.svg);
             size: cover;
             repeat: no-repeat;
-            position: center;
         }
     }
 }
@@ -100,12 +104,11 @@
 .parting p::before {
     @include for-size(desktop-up) {
         @include pseudo;
-        content: '';
         position: absolute;
         width: 40px;
         height: 40px;
         top: -30px;
-        right: -320px;
+        right: -150px;
         background: {
             image: url(../images/svg/eclipse.svg);
             size: cover;
@@ -116,13 +119,12 @@
 .parting p::after {
     @include for-size(desktop-up) {
         @include pseudo;
-        content: '';
         position: absolute;
         width: 6px;
         height: 6px;
         border-radius: 50%;
         top: -12px;
-        right: -304px;
+        right: -133px;
         background: {
             color: $main-black;
         }

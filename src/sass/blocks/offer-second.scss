@@ -71,6 +71,14 @@
         @include for-size(tablet-portrait-up) {
             font-size: 20px;
         }
+
+        @media (min-width: 1200px) and (max-width: 1439px) {
+            width: 580px;
+        }
+
+        @media (min-width: 1440px) {
+            width: 680px;
+        }
     }
 }
 
@@ -146,7 +154,7 @@
     @include for-size(desktop-up) {
         top: inherit;
         left: inherit;
-        right: 43%;
+        right: 34%;
         bottom: 59px;
     }
 }
@@ -163,7 +171,7 @@
             repeat: no-repeat;
             position: center;
         }
-        left: 100px;
+        left: 5%;
         top: 90px;
     }
 }

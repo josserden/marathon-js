@@ -55,8 +55,13 @@
         line-height: calc(78 / 64);
     }
 
-    @include for-size(desktop-up) {
-        max-width: 850px;
+    @media (min-width: 1200px) and (max-width: 1439px) {
+        max-width: 650px;
+        margin-left: auto;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 770px;
         margin-left: auto;
     }
 }
@@ -72,10 +77,14 @@
         padding-right: 50px;
     }
 
-    @include for-size(desktop-up) {
-        max-width: 650px;
+    @media (min-width: 1200px) and (max-width: 1439px) {
+        max-width: 450px;
         padding: 0;
         margin-right: 180px;
+    }
+
+    @media (min-width: 1440px) {
+        max-width: 800px;
     }
 
     &-item {
