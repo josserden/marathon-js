@@ -92,6 +92,10 @@
     right: 5px;
     top: 130px;
 
+    @media (min-width: 499px) and (max-width: 599px) {
+        top: 105px;
+    }
+
     @include for-size(tablet-portrait-up) {
         right: 20px;
         top: 145px;

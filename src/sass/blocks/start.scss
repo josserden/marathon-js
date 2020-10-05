@@ -54,9 +54,19 @@
 .start__bgr {
     @include for-size(tablet-portrait-up) {
         background-image: url(../images/svg/vector2-tab.svg);
-        background-size: 60%;
+        background-size: 58%;
         background-repeat: no-repeat;
         background-position: bottom right;
+    }
+
+    @media (min-width: 799px) and (max-width: 899px) {
+        background-position: bottom 25% right;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: bottom -115px right;
     }
 
     @media only screen and (min-device-width: 960px) and (max-device-width: 1024px) {

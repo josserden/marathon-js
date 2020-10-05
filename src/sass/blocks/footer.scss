@@ -4,8 +4,12 @@ footer .wrapper {
 
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 20px 0 30px;
+
+    @include for-size(tablet-portrait-up) {
+        justify-content: center;
+    }
 
     &__item {
         width: 45%;
@@ -85,8 +89,12 @@ footer .wrapper {
 .social__box {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    max-width: 150px;
     margin-right: -20px;
+
+    @include for-size(tablet-portrait-up) {
+        max-width: 100%;
+    }
 }
 
 .social__item {

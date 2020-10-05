@@ -25,6 +25,10 @@
         top: 336px;
     }
 
+    @include for-size(tablet-landscape-up) {
+        top: 256px;
+    }
+
     @media (min-width: 900px) and (max-width: 1199px) {
         width: 386px;
     }

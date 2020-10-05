@@ -1,6 +1,6 @@
 .instruction {
     background: {
-        image: url(./images/img/pc-mob-min.png);
+        image: url(../images/img/pc-mob-min.png);
         size: contain;
         repeat: no-repeat;
         color: $accent-background;
@@ -8,6 +8,12 @@
 
     @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/img/pc-mob@2x-min.png);
+    }
+
+    @media (min-width: 469px) and (max-width: 599px) {
+        background: {
+            position: right;
+        }
     }
 
     @include for-size(tablet-portrait-up) {
