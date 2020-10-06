@@ -7,11 +7,16 @@
         margin-left: 35px;
     }
 
-    @include for-size(desktop-up) {
+    @media (min-width: 1200px) and (max-width: 1439px) {
         position: absolute;
+        bottom: 165px;
+        left: 42%;
+        transform: translateX(-50%);
+    }
+
+    @media (min-width: 1440px) {
         bottom: 200px;
         left: 45%;
-        transform: translateX(-50%);
     }
 
     .play-box-text {

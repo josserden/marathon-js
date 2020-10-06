@@ -102,29 +102,81 @@
 }
 
 .parting p::before {
-    @include for-size(desktop-up) {
+    @media (min-width: 1200px) and (max-width: 1439px) {
         @include pseudo;
         position: absolute;
         width: 40px;
         height: 40px;
-        top: -30px;
-        right: -150px;
+        top: -40px;
+        right: -245px;
         background: {
             image: url(../images/svg/eclipse.svg);
             size: cover;
         }
     }
+
+    @media (min-width: 1440px) {
+        @include pseudo;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: -50px;
+        right: -12.75em;
+        background: {
+            image: url(../images/svg/eclipse.svg);
+            size: cover;
+        }
+
+        @media (min-width: 1500px) {
+            @include pseudo;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: -50px;
+            right: -315px;
+            background: {
+                image: url(../images/svg/eclipse.svg);
+                size: cover;
+            }
+        }
+    }
 }
 
 .parting p::after {
-    @include for-size(desktop-up) {
+    @media (min-width: 1200px) and (max-width: 1439px) {
         @include pseudo;
         position: absolute;
         width: 6px;
         height: 6px;
         border-radius: 50%;
-        top: -12px;
-        right: -133px;
+        top: -22px;
+        right: -228px;
+        background: {
+            color: $main-black;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        @include pseudo;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: -32px;
+        right: -262px;
+        background: {
+            color: $main-black;
+        }
+    }
+
+    @media (min-width: 1500px) {
+        @include pseudo;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        top: -32px;
+        right: -298px;
         background: {
             color: $main-black;
         }
